@@ -10,11 +10,18 @@ package com.mycompany.java.activites.test;
  * @author ADMIN
  */
 public class JavaActivitesTest {
+  
+    
 
+    private static void Soustr(int nbrA , int nbrB){
+         System.out.println("la soustraction de deux nombres entier "+nbrA+ " et "+nbrB+" est "+ (nbrA+nbrB));
+       
+    }
     public static void main(String[] args) {
         
         int nbA = 4;
         int nbB = 2;
+       
         
         int EntierTest = 8;
         String v = "teqt";
@@ -39,11 +46,20 @@ public class JavaActivitesTest {
          // la multiplication de deux nombres entier est 8
          // la division de deux nombres entier est 2
          // NB les 3 methodes sont publiques car elles permettent de nous les faire utiliser ici :
-         TestModule test = new TestModule();
-         test.sommeTest(nbA , nbB);
-         test.multTest(nbA , nbB);
-         test.DivTest(nbA , nbB);
+          for (int increment = 0 ; increment<50 ; increment++){
+              
+        int nbAi = nbA+increment;
+        int nbBi = nbB+increment;
         
+         TestModule test = new TestModule();
+         test.sommeTest(nbAi , nbBi); //oubien new TestModule().sommeTest(nbAi , nbBi)
+         test.multTest(nbAi , nbBi);  //oubien new TestModule().multTest(nbAi , nbBi);
+         test.DivTest(nbAi , nbBi);
+        }
+         
+         // appel de la methode issu de la même classe (private static void) comme fonction
+          Soustr(nbA, nbB);
+         
         
         
     }
