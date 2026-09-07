@@ -14,6 +14,8 @@ public class JavaActivitesTest {
     public static void main(String[] args) {
         
         int EntierTest = 8;
+        String v = "";
         System.out.println(EntierTest);
+        System.out.println(v.isEmpty());
     }
 }
