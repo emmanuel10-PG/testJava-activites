@@ -38,7 +38,7 @@ public class JavaActivitesTest {
          // la somme de deux nombres entier est 6
          // la multiplication de deux nombres entier est 8
          // la division de deux nombres entier est 2
-         // NB les 3 methodes sont publiques car elles permettent de nous les faire utiliser ici
+         // NB les 3 methodes sont publiques car elles permettent de nous les faire utiliser ici :
          TestModule test = new TestModule();
          test.sommeTest(nbA , nbB);
          test.multTest(nbA , nbB);
